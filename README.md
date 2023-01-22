@@ -1,5 +1,5 @@
 # website-pat-mot
-Creating webpage pat-mot.pl
+Creating website pat-mot.pl
 
 HTML5 and CSS3
 
