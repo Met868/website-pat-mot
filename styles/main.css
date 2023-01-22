@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: rgb(38,70,83);
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    height: 68px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(233,196,106);
+}
+nav img{
+    width: 200px;
+}
+.nav-button {
+    width: auto;
+    border-radius: 10px;
+    transition: 0.15s;
+}
+.nav-button:hover{
+    background-color: rgba(233,196,106,0.3);
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: rgb(233,196,106);
+    font-size: 14px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.about-box,
+.services-box,
+.contact-box,
+.location-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233,196,106);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about-box h2,
+.services-box h2,
+.contact-box h2,
+.location-box h2{
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+.about-box p,
+.contact-box p,
+.location-box p{
+    font-size: 14px;
+}
+.services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -250px;
+}
+.img-gallery{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(../img/brakes.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-gallery:nth-child(2){
+    background: url(../img/wheel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(3){
+    background: url(../img/exhaust.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(4){
+    background: url(../img/suspension_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(5){
+    background: url(../img/suspension.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(6){
+    background: url(../img/diag.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(7){
+    background: url(../img/timing-belt.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery:nth-child(8){
+    background: url(../img/oil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-gallery p{
+    color: rgb(233,196,106);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 220px;
+    margin: 30px;
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.img-gallery:hover{
+    width: 300px;
+    cursor: pointer;
+}
+.img-gallery:hover p{
+    opacity: 1;
+    top: 220px;
+}
+nav .close-icon{
+    display: none;
+}
+nav .menu-icon{
+    display: none;
+}
+iframe{
+    width: 40%;
+    height: 500px;
+    margin-top: 50px;
+    filter: invert(90%);
+}
+@media (max-width: 700px){
+    .nav-links{
+        position: absolute;
+        background-color: rgba(233,196,106,0.3);
+        width: 200px;
+        height: 250px;
+        top: 65px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 5px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-button {
+        width: 100px;
+    }
+    nav .close-icon{
+        display: block;
+        color: rgb(233,196,106);
+        width: 20px;
+        margin-left: 170px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    nav .menu-icon{
+        display: block;
+        margin-right: 20px;
+        width: 20px;
+        cursor: pointer;
+    }
+}
