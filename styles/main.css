@@ -167,6 +167,14 @@ iframe{
     margin-top: 50px;
     filter: invert(90%);
 }
+.a-style{
+    color: rgb(233,196,106);
+    text-decoration: none;
+}
+.phone-icon,
+.mail-icon{
+    margin: 10px;
+}
 @media (max-width: 700px){
     .nav-links{
         position: absolute;
@@ -190,7 +198,6 @@ iframe{
     }
     nav .close-icon{
         display: block;
-        color: rgb(233,196,106);
         width: 20px;
         margin-left: 170px;
         margin-top: 10px;
