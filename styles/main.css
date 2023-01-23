@@ -72,7 +72,7 @@ section{
     margin: 10px 0 0 0;
 }
 .slide{
-    animation: slideleft 1.5s linear forwards;
+    animation: slidebottom 1s linear forwards;
 }
 p.slide{
     animation-delay: 2s;
@@ -190,13 +190,13 @@ iframe{
 .location-icon{
     margin-left: 10px;
 }
-@keyframes slideleft{
+@keyframes slidebottom{
     0%{
-        transform: translate(100px);
+        transform: translateY(100px);
         opacity: 0;
     }
     100%{
-        transform: translate(0px);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
