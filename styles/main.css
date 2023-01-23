@@ -175,6 +175,9 @@ iframe{
 .mail-icon{
     margin: 10px;
 }
+.location-icon{
+    margin-left: 10px;
+}
 @media (max-width: 700px){
     .nav-links{
         position: absolute;
