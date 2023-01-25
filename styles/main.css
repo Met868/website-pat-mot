@@ -190,6 +190,11 @@ iframe{
 .location-icon{
     margin-left: 10px;
 }
+.footer-box{
+    color: rgb(233,196,106);
+    text-align: center;
+    border-top: 1px solid rgb(233,196,106);
+}
 @keyframes slidebottom{
     0%{
         transform: translateY(100px);
