@@ -74,14 +74,21 @@ section{
 .slide{
     animation: slidebottom 1s linear forwards;
 }
-p.slide{
+h2.slide{
     animation-delay: 2s;
+}
+p.slide{
+    animation-delay: 4.5s;
 }
 .services-box h2,
 .contact-box h2,
 .location-box h2{
     font-size: 30px;
     margin: 10px 0 0 0;
+}
+.about-box h2{
+    font-size: 14px;
+    opacity: 0;
 }
 .about-box p{
     font-size: 14px;
@@ -194,6 +201,7 @@ iframe{
     color: rgb(233,196,106);
     text-align: center;
     border-top: 1px solid rgb(233,196,106);
+    font-size: 14px;
 }
 @keyframes slidebottom{
     0%{
