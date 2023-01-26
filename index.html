@@ -19,8 +19,8 @@
         <section id="header">
             <nav>
                 <a href="index.html"><img src="img/baner.png" alt="company logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <img class="close-icon" src="icons/close.png" alt="close button">
+                <div class="nav-links" id="mobile-menu">
+                    <img class="close-icon" src="icons/close.png" alt="close button" onclick="closeMenu()">
                     <ul>
                         <li class="nav-button"><a href="#about-sec">O FIRMIE</a></li>
                         <li class="nav-button"><a href="#services-sec">USŁUGI</a></li>
@@ -28,7 +28,7 @@
                         <li class="nav-button"><a href="#location-sec">LOKALIZACJA</a></li>
                     </ul>
                 </div>
-                <img class="menu-icon" src="icons/menu.png" alt="menu button">
+                <img class="menu-icon"  src="icons/menu.png" alt="menu button" onclick="openMenu()">
             </nav>    
         </section>
         <section id="about-sec">
@@ -76,5 +76,13 @@
             <h4>Copyright © Maciej Kraszewski</h4>
             </div>
         </footer>
+        <script>
+            function openMenu() {
+                document.getElementById("mobile-menu").style.right = "0px";
+            }
+            function closeMenu() {
+                document.getElementById("mobile-menu").style.right = "-200px"
+            }
+        </script>
     </body>
 </html>
