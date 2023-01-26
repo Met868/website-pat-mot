@@ -214,7 +214,7 @@ iframe{
         opacity: 1;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 1000px){
     .nav-links{
         position: absolute;
         background-color:  rgb(38,70,83);;
